@@ -5,6 +5,9 @@
         <div class="row align-items-center justify-content-around flex-row-reverse">
             <div class="col-lg-6">
                 <div class="about-text">
+                  <h3 class="dark-color">{{name}}</h3>
+
+                  <button (click)="alertfun()" [disabled]="buttondis" value="">submite</button>
                     <h3 class="dark-color">Do some awsome stuff with me.</h3>
                     <h4 class="theme-color">UI / UX Designer &amp; Web Developer</h4>
                     <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores. My passion is to design digital user experiences through the bold interface and meaningful interactions.</p>
@@ -16,8 +19,8 @@
                 </div>
             </div>
             <div class="col-lg-5 text-center">
-                <div class="about-img">
-                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png">
+                <div class="about-img w-50">
+                    <img class="" [src]="imgsrc">
                 </div>
             </div>
         </div>
